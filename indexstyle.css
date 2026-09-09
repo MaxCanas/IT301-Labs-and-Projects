@@ -1,0 +1,47 @@
+html {
+    background-color: lightblue;
+    font-family: "Valley Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    text-shadow: 2px 2px 5px gray;
+}
+
+h2 {
+    text-decoration: underline;
+    text-shadow: 2px 2px 5px gray;
+}
+
+p {
+    background-color: peachpuff;
+    border-radius: 4px;
+    padding: 4px;
+    width: fit-content;
+    border-color: darkolivegreen;
+    border-width: 2px;
+    border-style: solid;
+    box-shadow: 2px 2px 1px black;
+}
+
+ul {
+    list-style-type: none;
+    background-color: lightgreen;
+    border-radius: 4px;
+    padding: 4px;
+    width: fit-content;
+    border-color: darkolivegreen;
+    border-width: 2px;
+    border-style: solid;
+    line-height: 2em;
+    box-shadow: 2px 2px 1px black;
+}
+
+section li:nth-child(4) {
+    background-color: coral;
+    border-radius: 2px;
+    padding: 1px;
+    width: fit-content;
+}
