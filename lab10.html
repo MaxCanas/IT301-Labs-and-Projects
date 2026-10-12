@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab10</title>
+    <script>
+        var valid = true;
+        var bill = Number(prompt('Total bill amount: '));
+        do {
+            if (bill == null || bill == 0) {
+                bill = Number(prompt('Please enter a valid bill amount greater than 0: '));
+                valid = false;
+            }
+            if (bill < 0) {
+                bill = Number(prompt('Negative numbers are not allowed, enter a valid bill amount greater than 0: '));
+                valid = false;
+            }
+            if (isNaN(bill) == true) {
+                bill = Number(prompt('Input is invalid, please enter a valid bill amount greater than 0: '));
+                valid = false;
+        }
+        } while (valid == false);
+        console.log(`For a bill of $${bill}, the tip should be $${bill / 10}.`);
+        document.write(`For a bill of $${bill}, the tip should be $${bill / 10}.`);
+    </script>
+</head>
+<body>    
+</body>
+</html>
