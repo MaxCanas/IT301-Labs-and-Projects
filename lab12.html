@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lab12</title>
+</head>
+<body>
+   <form action="#">
+       <label for="grade"> What is your name?</label>
+       <input type="string" id="name">
+       <button type="button" id="submit">Submit</button>
+   </form>
+   <p id="greet"></p>
+   <form action="#">
+       <label for="grade"> First number: </label>
+       <input type="number" id="num1">
+   </form>
+   <form action="#">
+       <label for="grade"> Second number: </label>
+       <input type="number" id="num2">
+   </form>
+   <p>Select an Operator:</p>
+   <form action="#">
+       <input type="radio" name='rator' value="add">Add<br>
+       <input type="radio" name='rator' value="sub">Subtract<br>
+       <input type="radio" name='rator' value="mult">Multiply<br>
+       <input type="radio" name='rator' value="div">Divide<br>
+       <button type="button" id="bttn">Calculate</button>
+   </form>
+   <p id="result"></p>
+   <form action="#">
+        <button type="button" id="clear">Clear all boxes</button>
+   </form>
+   <script>
+       document.getElementById('submit').addEventListener('click', function(){
+           document.getElementById('greet').textContent = `Hello ${document.getElementById('name').value}`;
+       })
+       document.getElementById('bttn').addEventListener('click', function() {
+           const num1 = document.getElementById('num1');
+           const num2 = document.getElementById('num2');
+           const operator = document.querySelector('[name=rator]:checked');
+           if (operator.value == 'add') {
+               document.getElementById('result').textContent = Number(num1.value) + Number(num2.value);
+           } else if (operator.value == 'sub') {
+            document.getElementById('result').textContent = Number(num1.value) - Number(num2.value);
+           } else if (operator.value == 'mult') {
+            document.getElementById('result').textContent = Number(num1.value) * Number(num2.value);
+           } else if (operator.value == 'div') {
+            document.getElementById('result').textContent = Number(num1.value) / Number(num2.value);
+           }
+       })
+       document.getElementById('clear').addEventListener('click', function(){
+        document.getElementById('name').value = '';
+        document.getElementById('num1').value = '';
+        document.getElementById('num2').value = '';
+        document.getElementById('name').textContent = '';
+        document.getElementById('result').textContent = '';
+        document.querySelectorAll('[name="rator"]').forEach(function(radio) {
+        radio.checked = false;})
+       })
+   </script>
+</body>
+</html>
