@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reviews.css">
+    <link rel="stylesheet" href="generalstyle.css">
+    <title>Reviews</title>
+</head>
+<body>
+    <header>
+        <h1>Personal Rankings</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Back to main page</a></li>
+            <li><a href="collaborations.html">Collaborations</a></li>
+            <li><a href="ack.html">Acknowledgements</a></li>
+            <li><a href="albums.html">Albums</a></li>
+        </ul>
+    </nav>
+    <!--Personal Ranking-->
+    <main>
+        <h2>My Personal Ranking (top 5 albums)</h2>
+        <ol>
+            <li>
+                <h3>Late Registration (2004)</h3>
+                <p>
+                    This album is his most consistent project in terms of quality. Every song has something
+                    to love about it with songs like We Major, Touch the Sky, and Late that are upbeat and funny. 
+                    There are also songs like Diamonds From Sierra Leone, Roses, and Hey Mama that are talk about
+                    more serious topics with a melodic twist to each.
+                </p>
+            </li>
+            <li>
+                <h3>Yeezus (2013)</h3>
+                <p>
+                    I am a huge fan of Kanye's maximalism, and this album is full of unique, industrial sounds that no other 
+                    artist could replicate or even dream of making. On Sight, Hold My Liqour, and Guilt Trip perfectly capture the 
+                    chaotic nature of Kanye's creativity.
+                </p>
+            </li>
+            <li>
+                <h3>808s & Heartbreaks (2008)</h3>
+                <p>
+                    This album has grown on me over time and certainly requires an acquired taste to truly enjoy the
+                    project. The production on this album was very ahead of its time, and its easy to see how it inspired
+                    much of todays pop music. Love Lockdown, Coldest Winter, and Say You Will are good examples of the slow, singy
+                    vibes the album gives off.
+                </p>
+            </li>
+            <li>
+                <h3>Graduation (2007)</h3>
+                <p>
+                    This album has many uplifting, energetic songs with some of the best production exhibited in his
+                    entire discography. Songs like Homecoming, Flash Lights, and Champion prove this point, every song
+                    is fantastic regardless.
+                </p>
+            </li>
+            <li>
+                <h3>Donda (2021)</h3>
+                <p>
+                    Donda is a very spiritually inspired project with amazing performances from all the artists featured on this album.
+                    It also is a good balance of Kanye's religious side and his hip hop-inspired side. Songs like Hurricane, New Again, 
+                    and Believe What I Say are powerful tracks with satisfy production and verses you wouldn't hear anywhere else.
+                </p>
+            </li>
+        </ol>
+        <!--Form-->
+        <h2 id="opinion">Share Your Opinion!</h2>
+        <p>Tell me your favorite Kanye album!</p>
+        <form action="#">
+            <label>Your Name:</label>
+            <input type="text" placeholder="Enter your name" minlength="2" required>
+            <label>Favorite Kanye Album:</label>
+            <select id="favorite" required>
+                <option value="">Choose an Album</option>
+                <option value="tcd">The College Dropout</option>
+                <option value="lr">Late Registration</option>
+                <option value="graduation">Graduation</option>
+                <option value="808s">808s & Heartbreak</option>
+                <option value="mbdtf">My Beautiful Dark Twisted Fantasy</option>
+                <option value="yeezus">Yeezus</option>
+                <option value="tlop">The Life of Pablo</option>
+                <option value="ye">Ye</option>
+                <option value="jik">Jesus Is King</option>
+                <option value="donda">Donda</option>
+                <option value="donda 2">Donda 2</option>
+                <option value="BULLY">BULLY</option>
+            </select>
+            <label>Rate Your Favorite Album (1-10):</label>
+            <input type="number" min="1" max="10" required>
+            <button type="submit">Submit Opinion</button>
+    </form>
+    </main>
+    <footer>
+        <p>Max Canas, Static Web Site Project</p>
+    </footer>
+</body>
+</html>

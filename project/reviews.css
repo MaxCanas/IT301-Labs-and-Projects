@@ -1,0 +1,54 @@
+nav {
+    top: 70px;
+}
+main ol li::marker {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+#opinion {
+    text-align: center;
+}
+main > p {
+    text-align: center;
+    font-weight: bold;
+}
+main form {
+    background-color: black;
+    border: 2px solid gray;
+    border-radius: 12px;
+    padding: 30px;
+    margin: 30px auto 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 80%;
+
+}
+main form label {
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+}
+main form input, main form select {
+    padding: 12px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+}
+main form button {
+    margin-top: 15px;
+    padding: 14px;
+    border: none;
+    background-color: gold;
+    border-radius: 3px;
+    box-shadow: 0 5px 0 orange;
+    transition: box-shadow 1s, 0.2s;
+    cursor: pointer;
+}
+main form button:hover {
+    transform: translateY(5px);
+    box-shadow: 0 0 0 orange;
+}

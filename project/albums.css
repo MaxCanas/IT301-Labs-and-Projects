@@ -1,0 +1,60 @@
+body {
+    background-color: black;
+}
+nav {
+    top: 70px;
+}
+main {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+section img {
+    width: 40%;
+    display: block;
+}
+section {
+    background-color: black;
+    border: solid black;
+    width: 95%;
+    border-radius: 2px;
+    display: flex;
+    gap: 10px;
+}
+section:first-child {
+    box-shadow: 0 4px 700px gold;
+}
+section:nth-child(2) {
+    box-shadow: 0 4px 700px rgb(109, 46, 46);
+}
+section:nth-child(3) {
+    box-shadow: 0 4px 700px rgb(196, 95, 182);
+}
+section:nth-child(4) {
+    box-shadow: 0 4px 700px gray;
+}
+section:nth-child(5) {
+    box-shadow: 0 4px 700px red;
+}
+section:nth-child(6) {
+    box-shadow: 0 4px 700px white;
+}
+section:nth-child(7) {
+    box-shadow: 0 4px 700px rgb(217, 141, 0);
+}
+section:nth-child(8) {
+    box-shadow: 0 4px 700px lightblue;
+}
+section:nth-child(9) {
+    box-shadow: 0 4px 700px blue;
+}
+section:nth-child(10) {
+    box-shadow: 0 4px 700px green;
+}
+section:nth-child(11) {
+    box-shadow: 0 4px 700px orange;
+}
+section:nth-child(12) {
+    box-shadow: 0 4px 700px white;
+}
